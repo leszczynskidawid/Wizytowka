@@ -7,10 +7,13 @@
 
 header.welcome {
     position: relative;
+    z-index: 1;
     background-color: #29a6dc;
-    right: 0%;
+    right: 0px;
     height: 90vh;
     overflow: hidden;
+
+
 }
 
 img {
@@ -51,7 +54,7 @@ h2.type {
     font-weight: normal;
 }
 
-div button.more {
+button.more {
 
     background-color: transparent;
     font-size: 12px;
@@ -61,6 +64,43 @@ div button.more {
     margin-top: 20%;
     text-transform: uppercase;
 
+}
+
+@media(orientation: portrait) and (min-width:350px) {
+    div.textContent {
+        top: 45px;
+        width: 100%;
+        padding: none;
+        left: 0%;
+        right: 0%;
+        margin: 0 auto;
+
+    }
+
+    div p.hello {
+
+        font-size: 50px;
+
+
+    }
+
+    h1.name {
+        font-size: 30px;
+
+    }
+
+    h2.type {
+        font-size: 30px;
+    }
+
+    button.more {
+        margin: 30px;
+    }
+
+    .imagehero {
+        right: 0px;
+        bottom: -10px;
+    }
 }
 
 @media(orientation:landscape) {
@@ -84,33 +124,102 @@ div button.more {
 
     }
 
-    div button.more {
+    button.more {
         margin-top: 20px;
     }
 
 }
 
+@media(orientation:landscape) and (min-width:360px) {
+    .imagehero {
+        right: -1px;
+        bottom: 5%;
+    }
+
+    button.more {
+        margin-top: 40px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:568px) {
+    .imagehero {
+        bottom: 0%;
+    }
+}
+
+
+@media(orientation:landscape) and (min-width:640px) {
+    div.textContent {
+        position: absolute;
+        left: 10%;
+
+
+    }
+
+    .imagehero {
+        right: 0px;
+        bottom: 0;
+    }
+}
+
 @media(orientation:landscape) and (min-width:720px) {
-    img {
+    .imagehero {
         position: absolute;
         height: 90%;
-        right: -30px;
+        right: -90px;
     }
 
     div.textContent {
         top: 20%;
-        left: 5%;
+        left: 1px;
         right: 60%;
+        width: 50%;
     }
 
-    div button.more {
+    h1.name {
+        font-size: 20;
+    }
+
+    button.more {
         margin-top: 60px;
+        font-size: 18px;
+
+    }
+}
+
+@media(orientation:landscape) and (min-width:731px) {
+
+    div.textContent {
+        top: 9%;
+        left: 2%;
+        width: 50%;
 
     }
 
+    div p.hello {
+        font-size: 60px;
+    }
 
+    h1.name {
+        font-size: 30px;
+    }
 
+    h2.type {
+        font-size: 30px;
+    }
+
+    button.more {
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+    .imagehero {
+        right: -40px;
+    }
 }
+
+
+
 
 @media(orientation:landscape) and (min-width:1024px) {
     div p.hello {
@@ -149,3 +258,30 @@ div button.more {
         line-height: 50px;
     }
 }
+
+/* start coding visual style section on the page */
+.features {
+
+    margin-top: 50px;
+    height: 120vh;
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.titlefeatures {
+    display: block;
+    font-size: 60px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 900px;
+    text-align: center;
+}
+
+.imageSection {
+    width: 200px;
+    height: 120px;
+    margin: 5px auto;
+}
+
+.features {}
