@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header.welcome {
+    position: relative;
+    background-color: #29a6dc;
+    right: 0%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    height: 50%;
+    bottom: 0px;
+    right: -50px;
+
+}
+
+div.textContent {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    margin: 0px 20px;
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+    text-align: center;
+
+}
+
+div p.hello {
+    font-size: 40px;
+    font-weight: bold;
+
+
+}
+
+h1.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2.type {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+div button.more {
+
+    background-color: transparent;
+    font-size: 12px;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20%;
+    text-transform: uppercase;
+
+}
+
+@media(orientation:landscape) {
+    img {
+        position: absolute;
+        height: 90%;
+        right: 79px;
+        bottom: 0px;
+    }
+
+    div.textContent {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        right: 50%;
+        text-transform: uppercase;
+
+        color: white;
+        font-family: 'Saira Condensed', sans-serif;
+
+
+    }
+
+    div button.more {
+        margin-top: 20px;
+    }
+
+}
+
+@media(orientation:landscape) and (min-width:720px) {
+    img {
+        position: absolute;
+        height: 90%;
+        right: -30px;
+    }
+
+    div.textContent {
+        top: 20%;
+        left: 5%;
+        right: 60%;
+    }
+
+    div button.more {
+        margin-top: 60px;
+
+    }
+
+
+
+}
+
+@media(orientation:landscape) and (min-width:1024px) {
+    div p.hello {
+        font-size: 70px;
+        font-weight: bold;
+
+
+    }
+
+    h1.name {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    h2.type {
+        font-size: 40px;
+        font-weight: normal;
+    }
+
+    img {
+        position: absolute;
+        height: 90%;
+        right: -50px;
+    }
+
+    div.textContent {
+        top: 20%;
+        left: 5%;
+        right: 60%;
+    }
+
+    div button.more {
+
+        font-size: 20px;
+        margin-top: 90px;
+        line-height: 50px;
+    }
+}
