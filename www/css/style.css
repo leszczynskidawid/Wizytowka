@@ -353,4 +353,124 @@ button.more {
 .proudsections {
     margin-top: 20px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+    /* background-color:rgba(0, 0, 0, 0.9); */
 }
+
+.titlepraud {
+    color: white;
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.praudsectione {
+    background-color: rgba(255, 57, 2);
+    margin-bottom: 20px;
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+}
+
+.proudsections .praudsectione:nth-of-type(even) {
+    background-color: royalblue;
+}
+
+.titlenameproject {
+
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 30px;
+    padding: 10px 20px;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+
+}
+
+.discriptionproject {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-left: 3%;
+    padding: 20px 10px;
+
+}
+
+.projectimg img {
+    width: 100%;
+
+}
+
+
+@media(orientation:landscape) {
+
+    .projectimg,
+    .discriptionproject,
+    .titlenameproject {
+        float: left;
+        width: 50%;
+        padding: 0%;
+        margin: 0%;
+
+
+    }
+
+    .discriptionproject {
+        padding: 10px 20px;
+
+    }
+
+    .titlenameproject {
+        display: block;
+        width: 45%;
+        padding: 10px;
+        text-indent: 10px;
+    }
+
+
+
+    .projectimg img {
+        display: block;
+    }
+
+    .proudsections .praudsectione:nth-of-type(even) .projectimg {
+        float: right;
+    }
+
+    .proudsections .praudsectione:nth-of-type(even) .praudsectione {
+        padding: 0;
+    }
+
+    .proudsections .praudsectione:nth-of-type(even) .discriptionproject {
+        padding: 10px 20px;
+    }
+
+    .proudsections .praudsectione:nth-of-type(even) .titlenameproject {
+        padding: 0;
+        margin: 0;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sd */
