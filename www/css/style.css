@@ -5,18 +5,23 @@
 
 }
 
+html,
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
 header.welcome {
     position: relative;
     z-index: 1;
     background-color: #29a6dc;
     right: 0px;
     height: 90vh;
-    overflow: hidden;
 
 
 }
 
-img {
+.imagehero {
     position: absolute;
     height: 50%;
     bottom: 0px;
@@ -104,7 +109,7 @@ button.more {
 }
 
 @media(orientation:landscape) {
-    img {
+    .imagehero {
         position: absolute;
         height: 90%;
         right: 79px;
@@ -239,7 +244,7 @@ button.more {
         font-weight: normal;
     }
 
-    img {
+    .imagehero {
         position: absolute;
         height: 90%;
         right: -50px;
@@ -263,25 +268,209 @@ button.more {
 .features {
 
     margin-top: 50px;
-    height: 120vh;
     position: relative;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 100%;
+    padding: 5%;
+
 }
 
 .titlefeatures {
-    display: block;
-    font-size: 60px;
+
+    text-transform: uppercase;
+    font-size: 24px;
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 900px;
     text-align: center;
+
 }
 
 .imageSection {
-    width: 200px;
-    height: 120px;
-    margin: 5px auto;
+
+    width: 100%;
+    margin: 15px auto;
 }
 
-.features {}
+.boxtitle {
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 900px;
+}
+
+.discription {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: lighter;
+    text-justify: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+@media(orientation:landscape) and (min-width: 1530px) {
+    .features {
+        margin-top: 2%;
+        width: 100%;
+
+
+
+    }
+
+    .feature {
+        width: 33%;
+        float: left;
+        padding: 25px;
+    }
+
+    .imageSection {
+        width: 375px;
+        height: 225px;
+    }
+
+    .titlefeatures {
+        font-size: 60px;
+    }
+
+    .boxtitle {
+        font-size: 36px;
+    }
+
+    .discription {
+        font-size: 21px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-family: 'Saira Condensed', sans-serif;
+    }
+
+
+
+}
+
+/* poczatek sekcji dumny z projektow */
+.proudsections {
+    margin-top: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+    /* background-color:rgba(0, 0, 0, 0.9); */
+}
+
+.titlepraud {
+    color: white;
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.praudsectione {
+    background-color: rgba(255, 57, 2);
+    margin-bottom: 20px;
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+}
+
+.proudsections .praudsectione:nth-of-type(even) {
+    background-color: royalblue;
+}
+
+.titlenameproject {
+
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 30px;
+    padding: 10px 20px;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+
+}
+
+.discriptionproject {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-left: 3%;
+    padding: 20px 10px;
+
+}
+
+.projectimg img {
+    width: 100%;
+
+}
+
+
+@media(orientation:landscape) {
+
+    .projectimg,
+    .discriptionproject,
+    .titlenameproject {
+        float: left;
+        width: 50%;
+        padding: 0%;
+        margin: 0%;
+
+
+    }
+
+    .discriptionproject {
+        padding: 10px 20px;
+
+    }
+
+    .titlenameproject {
+        display: block;
+        width: 45%;
+        padding: 10px;
+        text-indent: 10px;
+    }
+
+
+
+    .projectimg img {
+        display: block;
+    }
+
+    .proudsections .praudsectione:nth-of-type(even) .projectimg {
+        float: right;
+    }
+
+    .proudsections .praudsectione:nth-of-type(even) .praudsectione {
+        padding: 0;
+    }
+
+    .proudsections .praudsectione:nth-of-type(even) .discriptionproject {
+        padding: 10px 20px;
+    }
+
+    .proudsections .praudsectione:nth-of-type(even) .titlenameproject {
+        padding: 0;
+        margin: 0;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sd */
